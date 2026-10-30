@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management - MERN Lab Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Item Management</h2>
+        
+        <!-- Form Section -->
+        <form id="itemForm">
+            <input type="hidden" id="itemId">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Enter item name">
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" required placeholder="Enter item price">
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+
+        <!-- List Section -->
+        <h2>Item List</h2>
+        <div id="message" class="message"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="itemsTableBody">
+                <!-- Data populated dynamically via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Mern_task1",
+  "version": "1.0.0",
+  "description": "CRUD operations on array of items using Express REST API and Frontend UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
